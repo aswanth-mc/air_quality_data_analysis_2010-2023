@@ -1,0 +1,25 @@
+# 1. Virtual Environments (CRITICAL - prevents pushing thousands of library files)
+.venv/
+
+# 2. Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# 3. Python Cache & Compiled Files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 4. Large Raw Datasets (Keep daily_cleaned.csv if small, ignore huge raw CSVs if >50MB)
+# data/AP001.csv   <-- Uncomment this line if you don't want the raw 10MB CSV on GitHub
+
+# 5. Environment Variables & Secrets (API keys, Streamlit secrets)
+.env
+.streamlit/secrets.toml
+
+# 6. Editor & OS System Files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# LibreOffice temporary lock files
+.~lock.*#
